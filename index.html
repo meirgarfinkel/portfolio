@@ -2,143 +2,147 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>Meir Garfinkel</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Meir Garfinkel — Software Engineer</title>
+  <meta
+    name="description"
+    content="Meir Garfinkel — Software engineer building backend systems, APIs, and RAG-powered products."
+  />
 
-  <meta name="description" content="Meir Garfinkel — Software engineer building SaaS products." />
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="manifest" href="/site.webmanifest">
 
-  <style>
-    :root {
-      --bg: #0f172a;
-      --text: #e5e7eb;
-      --muted: #94a3b8;
-      --accent: #38bdf8;
-      --card: #020617;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Ubuntu, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 4rem 1.5rem 6rem;
-    }
-
-    header {
-      margin-bottom: 4rem;
-    }
-
-    h1 {
-      font-size: 2.75rem;
-      margin: 0 0 0.5rem;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-      margin-bottom: 1.25rem;
-    }
-
-    p {
-      color: var(--muted);
-      max-width: 650px;
-    }
-
-    section {
-      margin-bottom: 4rem;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-
-    .project {
-      background: var(--card);
-      border-radius: 8px;
-      padding: 1.5rem;
-    }
-
-    .project h3 {
-      margin: 0 0 0.25rem;
-      font-size: 1.25rem;
-    }
-
-    .project a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .project a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      margin-top: 6rem;
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-
-    @media (min-width: 768px) {
-      h1 {
-        font-size: 3.25rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <main>
+  <div class="page">
     <header>
-      <h1>Meir Garfinkel</h1>
-      <p>
-        Software engineer building pragmatic SaaS products.
-        Focused on backend systems, infrastructure, and shipping production code.
-      </p>
+      <div>
+        <h1>Meir Garfinkel</h1>
+        <p>Software Engineer • Backend, SaaS, AI systems</p>
+      </div>
+      <div class="pill">Available for software roles</div>
     </header>
 
-    <section>
-      <h2>Projects</h2>
-      <div class="projects">
-        <div class="project">
-          <h3>SaaS Product One</h3>
-          <p>Short description of what this product does and why it matters.</p>
-          <a href="#" target="_blank" rel="noopener">View project →</a>
+    <main>
+      <!-- ABOUT -->
+      <section class="about">
+        <h2>About</h2>
+        <h3 class="intro-title">
+          Building reliable APIs, services, and RAG-driven products.
+        </h3>
+        <p class="intro-body">
+          <span class="highlight">Meir</span> is a software engineer focused on
+          backend development, modern web stacks, and retrieval-augmented
+          generation systems. He enjoys turning product requirements into clean,
+          maintainable services that scale from prototype to production.
+        </p>
+      </section>
+
+      <!-- LINKS + SKILLS -->
+      <section class="two-col">
+        <div class="links">
+          <h2>Contact & Links</h2>
+          <div class="links-grid">
+            <a class="link-card" href="https://www.linkedin.com/in/meirgarfinkel" target="_blank">
+              <span class="label">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-linkedin">
+                  <path
+                    fill="currentColor"
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.047c.476-.9 1.637-1.85 3.37-1.85 3.6 0 4.265 2.368 4.265 5.451v6.29zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.996 20.452H3.678V9h3.318v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0z"
+                  />
+                </svg>
+                LinkedIn
+              </span>
+              <span class="badge">Connect</span>
+            </a>
+
+            <a class="link-card" href="https://github.com/meirgarfinkel" target="_blank">
+              <span class="label">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    fill="currentColor"
+                    d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.1.68-.22.68-.48 0-.24-.01-1.04-.01-1.9-2.48.55-3.01-1.1-3.01-1.1-.45-1.18-1.12-1.5-1.12-1.5-.92-.64.07-.63.07-.63 1.02.07 1.56 1.07 1.56 1.07.9 1.58 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.37-1.98-.23-4.07-1.03-4.07-4.61 0-1.02.36-1.86.95-2.51-.1-.24-.41-1.21.09-2.52 0 0 .76-.25 2.5.96a8.3 8.3 0 0 1 4.56 0c1.74-1.21 2.5-.96 2.5-.96.5 1.31.19 2.28.09 2.52.59.65.95 1.49.95 2.51 0 3.59-2.09 4.38-4.08 4.61.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .26.18.59.69.48A10.03 10.03 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"
+                  />
+                </svg>
+                GitHub
+              </span>
+              <span class="badge">Code</span>
+            </a>
+
+            <a class="link-card" href="mailto:meirgarfinkel@gmail.com">
+              <span class="label">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    fill="currentColor"
+                    d="M4 4h16a2 2 0 0 1 2 2v1.2l-10 6.25L2 7.2V6a2 2 0 0 1 2-2Zm0 6.25 7.55 4.7a1 1 0 0 0 1 0L20 10.25V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7.75Z"
+                  />
+                </svg>
+                Email
+              </span>
+              <span class="badge">Say hi</span>
+            </a>
+          </div>
         </div>
 
-        <div class="project">
-          <h3>SaaS Product Two</h3>
-          <p>Another product description. Replace or duplicate as needed.</p>
-          <a href="#" target="_blank" rel="noopener">View project →</a>
+        <div class="skills">
+          <h2>Skills & Stack</h2>
+          <div class="skills-strip">
+            <span>Python • FastAPI • REST</span>
+            <span>PostgreSQL • SQL • Data modeling</span>
+            <span>AWS • Docker • CI/CD</span>
+            <span>RAG • FAISS • embeddings</span>
+            <span>React • Modern JS</span>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>
-        Reach me via
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-        or
-        <a href="mailto:meir@example.com">email</a>.
-      </p>
-    </section>
+      <!-- RECENT WORK -->
+      <section class="recent-work">
+        <h2>Recent Work</h2>
+        <ul class="experience-list">
+          <li>Designed backend APIs with clean architecture and strong domain boundaries.</li>
+          <li>Built end-to-end RAG pipelines including ingestion, chunking, and vector search.</li>
+          <li>Deployed containerized services with monitoring and performance tuning.</li>
+        </ul>
+      </section>
+
+      <!-- FEATURED PROJECT -->
+      <section class="featured">
+        <h2>Featured Project</h2>
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-title">Retrieval-Augmented Generation Platform</div>
+            <div class="project-meta">Personal Project</div>
+          </div>
+
+          <p class="project-body">
+            End-to-end RAG system that ingests unstructured text, performs
+            sentence-aware chunking, builds vector indices, and serves
+            query-aware answers through a FastAPI backend.
+          </p>
+
+          <div class="project-tags">
+            <span class="tag">FastAPI</span>
+            <span class="tag">FAISS</span>
+            <span class="tag">OpenAI API</span>
+            <span class="tag">Docker</span>
+          </div>
+
+          <a class="cta" href="https://rag-ml.fly.dev" target="_blank">
+            Open live demo →
+          </a>
+        </article>
+      </section>
+    </main>
 
     <footer>
       © <span id="year"></span> Meir Garfinkel
     </footer>
-  </main>
+  </div>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
