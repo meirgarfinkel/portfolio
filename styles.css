@@ -49,8 +49,8 @@ body {
     to right,
     black 0%,
     black 13%,
-    transparent 25%,
-    transparent 75%,
+    rgba(0, 0, 0, 0.15) 25%,
+    rgba(0, 0, 0, 0.15) 75%,
     black 87%,
     black 100%
   );
