@@ -2,14 +2,15 @@
   --bg: #020617;
   --accent: rgba(255, 162, 56, 0.8);
 
-  --text: #e5e7eb;
+  --text: #eaeaeaeb;
   --muted: #9ca3af;
 
   --border: rgba(255, 255, 255, 0.14);
   --inner-border: rgba(255, 255, 255, 0.28);
 
-  --radius: 14px;
+  --radius: 20px;
   --max-width: 960px;
+  --margin-bot: 40px;
 }
 
 /* ===============================
@@ -26,6 +27,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: 0.07em;
 }
 
 /* ===============================
@@ -122,14 +124,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 56px;
+  margin-bottom: var(--margin-bot);
   gap: 16px;
 }
 
 header h1 {
   margin: 0;
   font-size: 2.4rem;
-  letter-spacing: -0.02em;
 }
 
 header p {
@@ -139,11 +140,10 @@ header p {
 
 .pill {
   padding: 10px 14px;
-  border-radius: 999px;
-  font-size: 0.7rem;
+  border-radius: var(--radius);
+  font-size: 0.8rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--muted);
+  color: var(--text);
   cursor: pointer;
   transition: all 0.15s ease-out;
 }
@@ -166,13 +166,17 @@ header p {
 h2 {
   font-size: 0.8rem;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
   color: var(--accent);
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .text-center {
   text-align: center;
+}
+
+.text-green {
+  color: greenyellow;
+  font-weight: bolder;
 }
 
 .highlight {
@@ -184,7 +188,7 @@ h2 {
 ================================ */
 
 .about {
-  margin-bottom: 64px;
+  margin-bottom: var(--margin-bot);
 }
 
 .intro-title {
@@ -208,7 +212,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
-  margin-bottom: 64px;
+  margin-bottom: var(--margin-bot);
 }
 
 @media (max-width: 800px) {
@@ -226,7 +230,6 @@ h2 {
 ================================ */
 
 .links {
-  composes: glass;
   padding: 20px;
   border-radius: var(--radius);
 }
@@ -241,7 +244,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   padding: 10px 14px;
-  border-radius: 999px;
+  border-radius: var(--radius);
   border: 1px solid var(--inner-border);
   background: rgba(15,23,42,.85);
   color: var(--text);
@@ -291,18 +294,16 @@ h2 {
 ================================ */
 
 .recent-work {
-  margin-bottom: 64px;
+  margin-bottom: var(--margin-bot);
 }
 
 .experience-list {
+  display: grid;
+  row-gap: 18px;
   list-style: none;
   padding: 0;
   margin: 0;
   color: var(--muted);
-}
-
-.experience-list li {
-  margin-bottom: 8px;
 }
 
 .experience-list li::before {
@@ -315,22 +316,21 @@ h2 {
 ================================ */
 
 .featured {
-  margin-bottom: 48px;
+  margin-bottom: var(--margin-bot);
 }
 
 .project-card {
-  composes: glass;
   border-radius: var(--radius);
   padding: 20px;
   background:
     radial-gradient(
-      600px circle at top left,
+      900px circle at top left,
       rgba(56,189,248,.18),
       transparent 40%
     ),
     linear-gradient(
       180deg,
-      rgba(255,255,255,.05),
+      rgba(255, 255, 255, 0.15),
       rgba(255,255,255,.02)
     );
   transition: box-shadow .3s ease;
@@ -357,7 +357,18 @@ h2 {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
-  margin: 12px 0;
+  margin: 0;
+}
+
+.cta-section {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0;
+}
+
+.cta {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* ===============================
