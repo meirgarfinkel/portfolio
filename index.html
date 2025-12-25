@@ -9,26 +9,22 @@
     content="Meir Garfinkel — Software engineer building backend systems, APIs, and RAG-powered products."
   />
 
-  <!-- Favicons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="icon" href="/favicon.ico">
-  <link rel="manifest" href="/site.webmanifest">
-
+  <link rel="icon" href="/favicon.ico" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <div class="page">
+  <div class="bg-grid"></div>
+
+  <div class="page content">
     <header>
       <div>
         <h1>Meir Garfinkel</h1>
         <p>Software Engineer • Backend, SaaS, AI systems</p>
       </div>
-      <div class="pill">Available for software roles</div>
+      <div class="pill glass">Available for software roles</div>
     </header>
 
     <main>
-      <!-- ABOUT -->
       <section class="about">
         <h2>About</h2>
         <h3 class="intro-title">
@@ -37,24 +33,17 @@
         <p class="intro-body">
           <span class="highlight">Meir</span> is a software engineer focused on
           backend development, modern web stacks, and retrieval-augmented
-          generation systems. He enjoys turning product requirements into clean,
-          maintainable services that scale from prototype to production.
+          generation systems.
         </p>
       </section>
 
-      <!-- LINKS + SKILLS -->
       <section class="two-col">
-        <div class="links">
+        <div class="links glass">
           <h2>Contact & Links</h2>
           <div class="links-grid">
             <a class="link-card" href="https://www.linkedin.com/in/meirgarfinkel" target="_blank">
               <span class="label">
-                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-linkedin">
-                  <path
-                    fill="currentColor"
-                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.047c.476-.9 1.637-1.85 3.37-1.85 3.6 0 4.265 2.368 4.265 5.451v6.29zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.996 20.452H3.678V9h3.318v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0z"
-                  />
-                </svg>
+                <img src="/icons/linkedin.svg" alt="" class="icon icon-linkedin" />
                 LinkedIn
               </span>
               <span class="badge">Connect</span>
@@ -62,12 +51,7 @@
 
             <a class="link-card" href="https://github.com/meirgarfinkel" target="_blank">
               <span class="label">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    fill="currentColor"
-                    d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.1.68-.22.68-.48 0-.24-.01-1.04-.01-1.9-2.48.55-3.01-1.1-3.01-1.1-.45-1.18-1.12-1.5-1.12-1.5-.92-.64.07-.63.07-.63 1.02.07 1.56 1.07 1.56 1.07.9 1.58 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.37-1.98-.23-4.07-1.03-4.07-4.61 0-1.02.36-1.86.95-2.51-.1-.24-.41-1.21.09-2.52 0 0 .76-.25 2.5.96a8.3 8.3 0 0 1 4.56 0c1.74-1.21 2.5-.96 2.5-.96.5 1.31.19 2.28.09 2.52.59.65.95 1.49.95 2.51 0 3.59-2.09 4.38-4.08 4.61.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .26.18.59.69.48A10.03 10.03 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"
-                  />
-                </svg>
+                <img src="/icons/github.svg" alt="" class="icon" />
                 GitHub
               </span>
               <span class="badge">Code</span>
@@ -75,12 +59,7 @@
 
             <a class="link-card" href="mailto:meirgarfinkel@gmail.com">
               <span class="label">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    fill="currentColor"
-                    d="M4 4h16a2 2 0 0 1 2 2v1.2l-10 6.25L2 7.2V6a2 2 0 0 1 2-2Zm0 6.25 7.55 4.7a1 1 0 0 0 1 0L20 10.25V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7.75Z"
-                  />
-                </svg>
+                <img src="/icons/email.svg" alt="" class="icon" />
                 Email
               </span>
               <span class="badge">Say hi</span>
@@ -88,48 +67,45 @@
           </div>
         </div>
 
-        <div class="skills">
+        <div class="text-center">
           <h2>Skills & Stack</h2>
-          <div class="skills-strip">
-            <span>Python • FastAPI • REST</span>
-            <span>PostgreSQL • SQL • Data modeling</span>
-            <span>AWS • Docker • CI/CD</span>
-            <span>RAG • FAISS • embeddings</span>
-            <span>React • Modern JS</span>
+          <div class="links-grid">
+            <div class="pill glass">Python  •  FastAPI  •  Django • REST</div>
+            <div class="pill glass">PostgreSQL  •  SQL  •  Data modeling</div>
+            <div class="pill glass">AWS  •  Docker  •  CI/CD</div>
+            <div class="pill glass">RAG  •  FAISS  •  embeddings  •  vectors</div>
+            <div class="pill glass">React  •  Modern JS  •  Tailwind</div>
           </div>
         </div>
       </section>
 
-      <!-- RECENT WORK -->
       <section class="recent-work">
         <h2>Recent Work</h2>
         <ul class="experience-list">
-          <li>Designed backend APIs with clean architecture and strong domain boundaries.</li>
-          <li>Built end-to-end RAG pipelines including ingestion, chunking, and vector search.</li>
-          <li>Deployed containerized services with monitoring and performance tuning.</li>
+          <li>Designed backend APIs with clean architecture.</li>
+          <li>Built production-grade RAG pipelines.</li>
+          <li>Deployed containerized services with monitoring.</li>
         </ul>
       </section>
 
-      <!-- FEATURED PROJECT -->
       <section class="featured">
         <h2>Featured Project</h2>
-        <article class="project-card">
+        <article class="project-card glass">
           <div class="project-header">
             <div class="project-title">Retrieval-Augmented Generation Platform</div>
             <div class="project-meta">Personal Project</div>
           </div>
 
           <p class="project-body">
-            End-to-end RAG system that ingests unstructured text, performs
-            sentence-aware chunking, builds vector indices, and serves
-            query-aware answers through a FastAPI backend.
+            End-to-end RAG system ingesting unstructured text, building vector
+            indices, and serving answers via FastAPI.
           </p>
 
           <div class="project-tags">
-            <span class="tag">FastAPI</span>
-            <span class="tag">FAISS</span>
-            <span class="tag">OpenAI API</span>
-            <span class="tag">Docker</span>
+            <span class="link-card">FastAPI</span>
+            <span class="link-card">FAISS</span>
+            <span class="link-card">OpenAI API</span>
+            <span class="link-card">Docker</span>
           </div>
 
           <a class="cta" href="https://rag-ml.fly.dev" target="_blank">
@@ -146,6 +122,12 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    const grid = document.querySelector(".bg-grid");
+    window.addEventListener("mousemove", (e) => {
+      grid.style.setProperty("--mx", e.clientX + "px");
+      grid.style.setProperty("--my", e.clientY + "px");
+    });
   </script>
 </body>
 </html>
