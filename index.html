@@ -2,15 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Meir Garfinkel</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Meir Garfinkel Portfolio</title>
   <meta
     name="description"
-    content="Meir Garfinkel, software engineer building backend and full stack systems, APIs, and applied AI products."
+    content="Meir Garfinkel, software engineer building backend and full stack systems, APIs, and applied AI products with Python, TypeScript, and modern web technologies."
   />
+  <meta name="author" content="Meir Garfinkel" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#0f172a" />
 
-  <link rel="icon" href="/favicon.ico" />
+  <link rel="canonical" href="https://meirgarfinkel.com/" />
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Meir Garfinkel" />
+  <meta property="og:title" content="Meir Garfinkel Portfolio" />
+  <meta
+    property="og:description"
+    content="Software engineer building backend and full stack systems, APIs, and applied AI products with Python, TypeScript, and modern web technologies."
+  />
+  <meta property="og:url" content="https://meirgarfinkel.com/" />
+  <meta property="og:image" content="https://meirgarfinkel.com/android-chrome-512x512.png" />
+  <meta property="og:image:alt" content="Meir Garfinkel" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Meir Garfinkel Portfolio" />
+  <meta
+    name="twitter:description"
+    content="Software engineer building backend and full stack systems, APIs, and applied AI products with Python, TypeScript, and modern web technologies."
+  />
+  <meta name="twitter:image" content="https://meirgarfinkel.com/android-chrome-512x512.png" />
+
+  <!-- Icons / PWA -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/android-chrome-192x192.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
   <link rel="stylesheet" href="/styles.css" />
+
+  <!-- Structured data: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Meir Garfinkel",
+    "url": "https://meirgarfinkel.com/",
+    "image": "https://meirgarfinkel.com/android-chrome-512x512.png",
+    "jobTitle": "Software Engineer",
+    "email": "mailto:meirgarfinkel@gmail.com",
+    "description": "Software engineer building backend and full stack systems, APIs, and applied AI products.",
+    "knowsAbout": [
+      "Backend Development",
+      "Full Stack Development",
+      "APIs",
+      "Applied AI",
+      "Python",
+      "TypeScript",
+      "Retrieval Augmented Generation"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/meirgarfinkel",
+      "https://github.com/meirgarfinkel"
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="bg-grid"></div>
@@ -39,7 +100,7 @@
           I am a software engineer with experience across backend and full stack
           development. I work mainly with Python, TypeScript, and modern web
           technologies, and I enjoy building clean APIs, data driven services,
-          and production ready systems.
+          and production-ready systems.
         </p>
       </section>
 
@@ -47,7 +108,7 @@
         <div class="project-card glass">
           <h2>Contact & Links</h2>
           <div class="links-grid">
-            <a class="link-card" href="https://www.linkedin.com/in/meirgarfinkel" target="_blank">
+            <a class="link-card" href="https://www.linkedin.com/in/meirgarfinkel" target="_blank" rel="noopener noreferrer">
               <span class="label">
                 <img src="/icons/linkedin.svg" alt="linkedin" class="icon icon-linkedin" />
                 LinkedIn
@@ -55,7 +116,7 @@
               <span class="badge">Connect</span>
             </a>
 
-            <a class="link-card" href="https://github.com/meirgarfinkel" target="_blank">
+            <a class="link-card" href="https://github.com/meirgarfinkel" target="_blank" rel="noopener noreferrer">
               <span class="label">
                 <img src="/icons/github.svg" alt="github" class="icon" />
                 GitHub
@@ -97,34 +158,67 @@
       </section>
 
       <section class="featured">
-        <h2>Featured Project</h2>
-        <article class="project-card glass">
-          <div class="project-header">
-            <div class="project-title">Retrieval Augmented Generation Platform</div>
-            <div class="project-meta">Personal project</div>
-          </div>
+        <h2>Featured Projects</h2>
+        <div class="featured-list">
+          <article class="project-card glass">
+            <div class="project-header">
+              <div class="project-title">Retrieval Augmented Generation Platform</div>
+              <div class="project-meta">Personal project</div>
+            </div>
 
-          <p class="project-body">
-            A full end to end RAG platform that ingests unstructured content,
-            builds vector indexes, and serves grounded answers through a FastAPI
-            backend. Designed with production concerns in mind, including data
-            modeling, performance, and deployment.
-          </p>
+            <p class="project-body">
+              A full end to end RAG platform that ingests unstructured content,
+              builds vector indexes, and serves grounded answers through a FastAPI
+              backend. Designed with production concerns in mind, including data
+              modeling, performance, and deployment.
+            </p>
 
-          <div class="project-tags">
-            <span class="link-card">FastAPI</span>
-            <span class="link-card">Python</span>
-            <span class="link-card">FAISS</span>
-            <span class="link-card">OpenAI API</span>
-            <span class="link-card">Docker</span>
-          </div>
+            <div class="project-tags">
+              <span class="link-card">FastAPI</span>
+              <span class="link-card">Python</span>
+              <span class="link-card">FAISS</span>
+              <span class="link-card">OpenAI API</span>
+              <span class="link-card">Docker</span>
+            </div>
 
-          <div class="cta-section">
-            <a class="pill glass cta" href="https://rag-ml.fly.dev" target="_blank">
-              Open live demo →
-            </a>
-          </div>
-        </article>
+            <div class="cta-section">
+              <a class="pill glass cta" href="https://rag-ml.meirgarfinkel.com" target="_blank" rel="noopener noreferrer">
+                Open live demo →
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card glass">
+            <div class="project-header">
+              <div class="project-title">Shefa: A Free Human-First Job Board</div>
+              <div class="project-meta">Nonprofit project</div>
+            </div>
+
+            <p class="project-body">
+              A free, nonprofit job board for people without experience looking to
+              break into their first job or a new field. Shefa removes résumés and
+              credential gatekeeping in favor of a human, message-based experience,
+              letting candidates prove themselves directly to employers willing to
+              hire on potential. Built with a strict, type-safe full stack and
+              production concerns like geo search, freshness verification, and email
+              notifications.
+            </p>
+
+            <div class="project-tags">
+              <span class="link-card">Next.js</span>
+              <span class="link-card">TypeScript</span>
+              <span class="link-card">tRPC</span>
+              <span class="link-card">Drizzle ORM</span>
+              <span class="link-card">PostgreSQL</span>
+            </div>
+
+            <div class="cta-section">
+              <a class="pill glass cta" href="https://shefa.meirgarfinkel.com" target="_blank" rel="noopener noreferrer">
+                Go to site →
+              </a>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
 

@@ -174,15 +174,6 @@ h2 {
   text-align: center;
 }
 
-.text-green {
-  color: greenyellow;
-  font-weight: bolder;
-}
-
-.highlight {
-  color: var(--accent);
-}
-
 /* ===============================
    ABOUT
 ================================ */
@@ -228,11 +219,6 @@ h2 {
 /* ===============================
    LINKS
 ================================ */
-
-.links {
-  padding: 20px;
-  border-radius: var(--radius);
-}
 
 .links-grid {
   display: grid;
@@ -282,14 +268,6 @@ h2 {
 }
 
 /* ===============================
-   SKILLS
-================================ */
-
-.skills-section {
-  margin-left: 4rem;
-}
-
-/* ===============================
    RECENT WORK
 ================================ */
 
@@ -317,6 +295,11 @@ h2 {
 
 .featured {
   margin-bottom: var(--margin-bot);
+}
+
+.featured-list {
+  display: grid;
+  gap: 24px;
 }
 
 .project-card {

@@ -1,6 +1,10 @@
 {
 	"name": "Meir Garfinkel",
 	"short_name": "Meir",
+	"description": "Software engineer building backend and full stack systems, APIs, and applied AI products.",
+	"lang": "en",
+	"start_url": "/",
+	"scope": "/",
 	"icons": [
 		{
 			"src": "/android-chrome-192x192.png",
